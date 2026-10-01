@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TicketFlow | IT Service Desk</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+        <header>
+
+            <h1>
+                TicketFlow 🖥️
+            </h1>
+
+            <p>
+                IT Service Desk Dashboard
+            </p>
+
+        </header>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <h2 id="totalTickets">
+                    0
+                </h2>
+
+                <p>
+                    Total Tickets
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h2 id="openTickets">
+                    0
+                </h2>
+
+                <p>
+                    Open
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h2 id="resolvedTickets">
+                    0
+                </h2>
+
+                <p>
+                    Resolved
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="ticket-section">
+
+            <div class="toolbar">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search tickets..."
+                >
+
+
+                <button id="newTicketButton">
+                    + New Ticket
+                </button>
+<div id="ticketForm" class="hidden">
+
+    <h2>Create New Ticket</h2>
+
+
+    <input
+        id="newUser"
+        placeholder="Employee Name"
+    >
+
+
+    <input
+        id="newDepartment"
+        placeholder="Department"
+    >
+
+
+    <input
+        id="newIssue"
+        placeholder="Issue"
+    >
+
+
+    <select id="newPriority">
+
+        <option value="High">
+            High
+        </option>
+
+        <option value="Medium">
+            Medium
+        </option>
+
+        <option value="Low">
+            Low
+        </option>
+
+    </select>
+
+
+    <button id="submitTicket">
+        Submit Ticket
+    </button>
+
+
+</div>
+            </div>
+
+
+
+            <div id="ticketContainer">
+
+                <!-- Tickets appear here -->
+
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
